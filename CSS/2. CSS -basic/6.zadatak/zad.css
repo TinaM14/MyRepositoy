@@ -1,0 +1,10 @@
+body {
+    --boja: lightskyblue;
+    --slova: black;
+    
+}
+
+p{
+    color: var(--slova);
+    background-color: var(--boja);
+}

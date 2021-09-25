@@ -1,0 +1,33 @@
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin big-icon {
+    .icon-wrapper {
+        display: inline-block;
+        border: 2px solid $white-color;
+        border-radius: 100%;
+        padding: 15px;
+
+
+        .icon {
+            width: 1em;
+            height: 1em;
+            fill: $white-color;
+        }
+
+    }
+}

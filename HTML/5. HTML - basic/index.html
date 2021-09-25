@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid{
+            border-color: red;
+        }
+        textarea:invalid{
+            border-color: red;
+        }
+        input:valid{
+            border-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <form action="action-page" method="GET">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="5" maxlength="20" pattern="([a-z][\.]\s([a-z])">
+        </div>
+        <div>
+            <label for="email">E-mail address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phoneNumber">Phone number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required maxlength="15">
+        </div>
+        <div>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required maxlength="100"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

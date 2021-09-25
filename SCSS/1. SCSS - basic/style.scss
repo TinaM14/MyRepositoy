@@ -1,0 +1,121 @@
+// 1. zadatak
+@mixin theme ($input: 'dark'){
+    @if ($input == 'dark') {
+        color: $dark;
+        background-color: $dark;
+    }
+    @else {
+        color: $light;
+        background-color: $light;
+    }
+}
+
+// 2. zadatak
+@mixin layout ($grid: true) {
+    @if $grid {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-auto-rows: 100px;
+    }
+    @else {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// 3. zadatak
+$weights: light, normal, bold;
+
+@each $weight in $weights {
+    .list-#{$weight} {
+        color: black;
+        background-color: yellow;
+        font-weight: $weight;
+    }
+}
+
+// 4. zadatk
+$colors: (
+    'red': red,
+    'green': green,
+    'blue': blue
+);
+
+@each $type, $color in $colors {
+    .background-#{$type} {
+        background-color: $color;
+    }
+}
+
+// 5. zadatak
+$font-size: (6rem, 5rem, 4rem, 3rem, 2rem, 1rem);
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: nth($font-size, $i);
+    }
+}
+
+@for $i from 1 through 6 {
+    .heading-#{$i} {
+        font-size: 1rem * (7 - $i);
+    }
+}
+
+// 6. zadatak
+$count: 1;
+
+@while $count < 6 {
+    .position-#{$count} {
+        position: absolute;
+        top: $count * 10%;
+    }
+
+    $count: $count + 1;
+}
+
+// 7. zadatak
+@function sum($x, $y) {
+    @return $x + $y;
+}
+
+// 8. zadatak
+$numbers: 1, 4, 9;
+
+@function max($numbers) {    
+    $max: nth($numbers, 1);
+    @for $i from 1 through length($numbers) {
+        @if (nth($numbers , $i) > $max) {
+            $max: nth($numbers, $i);
+        }
+    }
+
+    @return $max;
+}
+
+.p {
+    padding: max($numbers);
+}
+
+$colors: (
+    'primary': dodgerblue,
+    'secondary': green,
+    'danger': tomato
+);
+
+@each $button, $color in $colors {
+    .button-#{$button} {
+        background-color: $color;
+        color: white;
+
+        &:hover {
+            background-color: lighten($color, 5);
+        }
+
+        &:active {
+            background-color: darken($color, 5);
+        }
+    }
+}
+

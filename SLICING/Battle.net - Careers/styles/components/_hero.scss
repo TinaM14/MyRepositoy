@@ -1,0 +1,49 @@
+.hero {
+    position: relative;
+
+    img {
+        display: block;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 1em 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        @include mq-up('tablet') {
+            position: absolute;
+            top: 40%;
+        }
+    }
+
+    &__form {
+        display: flex;
+
+        @include mq-down('phone') {
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            padding: 0 3rem;
+        }
+    }
+
+    &__input {
+        padding: .8rem;
+        border-radius: 0;
+        border: 1px solid $color-border;
+        min-width: 250px;
+        font-size: 1.2rem;
+    }
+
+    &__text {
+        display: none;
+
+        @include mq-up('tablet') {
+            display: block;
+        }
+    }
+}

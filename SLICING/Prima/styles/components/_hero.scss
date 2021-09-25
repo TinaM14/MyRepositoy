@@ -1,0 +1,81 @@
+.hero {
+    padding-bottom: 50px;
+    
+    a {
+        text-decoration: none;
+    }
+
+    &-link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-left {
+        position: relative;
+        padding-left: 80px;
+        padding-top: 150px;
+
+
+        &__title{
+            font-size: 1.5rem;
+            color: $black-color;
+            padding-bottom: 30px;
+        }
+
+        &__content {
+            width: 60%;
+            line-height: 1.25;
+            font-size: .9rem;
+            color: $light-gray-color;
+            padding-bottom: 30px;
+        }
+
+        &__button {
+            @include button;
+        }
+
+        &-icon {
+            width: 1.5em;
+            height: 1.5em;
+            position: absolute;
+            left: 20px;
+            top: 205px;
+        }
+    }
+
+    &-right {
+        position: relative;
+
+        &__image {
+            width: 1400px;
+        }
+
+        &__buttons {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+
+            button {
+                border: none;
+                background: none;
+                font-size: 1rem;
+                color: $light-gray-color;
+                cursor: pointer;
+
+                &:first-child {
+                    color: $white-color;
+                }
+            }
+        }
+
+        &__icon {
+            width: 1.5em;
+            height: 1.5em;
+            position: absolute;
+            right: 20px;
+            top: 205px;
+            fill: $white-color;
+            transform: rotate(180deg);
+        }
+    }
+}

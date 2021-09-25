@@ -1,0 +1,141 @@
+.list-light {
+  color: black;
+  background-color: yellow;
+  font-weight: light;
+}
+
+.list-normal {
+  color: black;
+  background-color: yellow;
+  font-weight: normal;
+}
+
+.list-bold {
+  color: black;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.background-red {
+  background-color: red;
+}
+
+.background-green {
+  background-color: green;
+}
+
+.background-blue {
+  background-color: blue;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.heading-1 {
+  font-size: 6rem;
+}
+
+.heading-2 {
+  font-size: 5rem;
+}
+
+.heading-3 {
+  font-size: 4rem;
+}
+
+.heading-4 {
+  font-size: 3rem;
+}
+
+.heading-5 {
+  font-size: 2rem;
+}
+
+.heading-6 {
+  font-size: 1rem;
+}
+
+.position-1 {
+  position: absolute;
+  top: 10%;
+}
+
+.position-2 {
+  position: absolute;
+  top: 20%;
+}
+
+.position-3 {
+  position: absolute;
+  top: 30%;
+}
+
+.position-4 {
+  position: absolute;
+  top: 40%;
+}
+
+.position-5 {
+  position: absolute;
+  top: 50%;
+}
+
+.p {
+  padding: 9;
+}
+
+.button-primary {
+  background-color: dodgerblue;
+  color: white;
+}
+.button-primary:hover {
+  background-color: #389dff;
+}
+.button-primary:active {
+  background-color: #0583ff;
+}
+
+.button-secondary {
+  background-color: green;
+  color: white;
+}
+.button-secondary:hover {
+  background-color: #009a00;
+}
+.button-secondary:active {
+  background-color: #006700;
+}
+
+.button-danger {
+  background-color: tomato;
+  color: white;
+}
+.button-danger:hover {
+  background-color: #ff7961;
+}
+.button-danger:active {
+  background-color: #ff4d2e;
+}
+
+/*# sourceMappingURL=style.css.map */

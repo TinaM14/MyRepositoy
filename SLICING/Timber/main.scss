@@ -1,0 +1,12 @@
+@import './styles/base/reset.scss';
+@import './styles/base/variables';
+@import './styles/base/grid';
+@import './styles/base/mixins';
+@import './styles/base/global';
+
+@import './styles/components/header';
+@import './styles/components/navigation';
+@import './styles/components/main-title';
+@import './styles/components/white-section';
+@import './styles/components/statistic-section';
+@import './styles/components/description';

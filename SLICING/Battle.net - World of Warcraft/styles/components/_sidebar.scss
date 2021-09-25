@@ -1,0 +1,64 @@
+aside {
+   
+    li {
+        border-bottom: 1px solid darken($primary-color, 50);
+        padding: 0.5rem;
+        margin-right: 1rem;
+        background-color: rgba(190, 97, 19, .1);
+
+        &:hover, &:visited {
+            background-color: rgba(190, 97, 19, .3);
+        }
+    }
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    max-height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color:#281508;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparentize($primary-color, .3);
+    }
+}
+
+.recent-image {
+    width: 80px;
+    height: 50px;
+}
+
+.recent-link {
+    display: flex;
+    margin-top: 1rem;
+    text-decoration: none;
+    position: relative;
+    
+    div {
+        margin-left: 1rem;
+
+        span {
+            color: darken($primary-color, 30);
+            font-size: 10px;
+        }
+
+        .recent-headline {
+            color: $primary-color;
+            font-size: 0.9rem;
+            line-height: 1rem;
+        }
+
+        .recent-published {
+            position: absolute;
+            right: 0.5rem;
+            top: 0.1rem;
+        }
+    }
+}

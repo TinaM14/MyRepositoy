@@ -1,0 +1,25 @@
+.card {
+    background-color: $color-bg;
+    text-align: center;
+    height: 100%;  
+
+    &__content {
+        padding: 1.5rem;
+    }
+
+    &__image {
+        height: 245px;
+
+        @include mq-down('phone') {
+            height: auto;
+        }
+    }
+
+    &--alt {
+        @extend %card-styles;
+    }
+
+    &__category {
+        @extend %category-styles;
+    }
+}

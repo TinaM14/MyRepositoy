@@ -1,0 +1,16 @@
+.box-1 {
+    background-color: lightskyblue;
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 5px;
+    float: right;
+}
+.wrapper {
+    background-color: pink;
+}
+ .wrapper::after {
+     content: "";
+     display: block;
+     clear: both;
+ }

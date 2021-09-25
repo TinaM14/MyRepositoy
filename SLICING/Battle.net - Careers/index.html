@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your people</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="https://www.blizzard.com/en-us/"><img src="/assets/logo.png" alt="BlizzardLogo"></a>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container right-flex">
+            <ul class="navigation-left__list">
+                <li class="navigation-left__list-item active"><a
+                        href="https://careers.blizzard.com/global/en">Careers</a></li>
+                <li class="navigation-left__list-item"><a
+                        href="https://careers.blizzard.com/global/en/search-results">Job Openings</a></li>
+                <li class="navigation-left__list-item"><a
+                        href="https://careers.blizzard.com/global/en/disciplines">Disciplines</a></li>
+                <li class="navigation-left__list-item"><a
+                        href="https://careers.blizzard.com/global/en/locations">Locations</a></li>
+                <li class="navigation-left__list-item"><a
+                        href="https://careers.blizzard.com/global/en/life-at-blizzard">Life at Blizzard</a></li>
+                <li class="navigation-left__list-item"><a
+                        href="https://careers.blizzard.com/global/en/students">Students</a></li>
+            </ul>
+
+            <div class="navigation-right">
+                <ul class="navigation-right__list">
+                    <li class="navigation-right__list-item separator has-dropdown"><a class="show-dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.057v-3.057h2.994c-.059 1.143-.212 2.24-.456 3.279-.823-.12-1.674-.188-2.538-.222zm1.957 2.162c-.499 1.33-1.159 2.497-1.957 3.456v-3.62c.666.028 1.319.081 1.957.164zm-1.957-7.219v-3.015c.868-.034 1.721-.103 2.548-.224.238 1.027.389 2.111.446 3.239h-2.994zm0-5.014v-3.661c.806.969 1.471 2.15 1.971 3.496-.642.084-1.3.137-1.971.165zm2.703-3.267c1.237.496 2.354 1.228 3.29 2.146-.642.234-1.311.442-2.019.607-.344-.992-.775-1.91-1.271-2.753zm-7.241 13.56c-.244-1.039-.398-2.136-.456-3.279h2.994v3.057c-.865.034-1.714.102-2.538.222zm2.538 1.776v3.62c-.798-.959-1.458-2.126-1.957-3.456.638-.083 1.291-.136 1.957-.164zm-2.994-7.055c.057-1.128.207-2.212.446-3.239.827.121 1.68.19 2.548.224v3.015h-2.994zm1.024-5.179c.5-1.346 1.165-2.527 1.97-3.496v3.661c-.671-.028-1.329-.081-1.97-.165zm-2.005-.35c-.708-.165-1.377-.373-2.018-.607.937-.918 2.053-1.65 3.29-2.146-.496.844-.927 1.762-1.272 2.753zm-.549 1.918c-.264 1.151-.434 2.36-.492 3.611h-3.933c.165-1.658.739-3.197 1.617-4.518.88.361 1.816.67 2.808.907zm.009 9.262c-.988.236-1.92.542-2.797.9-.89-1.328-1.471-2.879-1.637-4.551h3.934c.058 1.265.231 2.488.5 3.651zm.553 1.917c.342.976.768 1.881 1.257 2.712-1.223-.49-2.326-1.211-3.256-2.115.636-.229 1.299-.435 1.999-.597zm9.924 0c.7.163 1.362.367 1.999.597-.931.903-2.034 1.625-3.257 2.116.489-.832.915-1.737 1.258-2.713zm.553-1.917c.27-1.163.442-2.386.501-3.651h3.934c-.167 1.672-.748 3.223-1.638 4.551-.877-.358-1.81-.664-2.797-.9zm.501-5.651c-.058-1.251-.229-2.46-.492-3.611.992-.237 1.929-.546 2.809-.907.877 1.321 1.451 2.86 1.616 4.518h-3.933z"/></svg> Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 21l-12-18h24z"/></svg>
+
+                            <div class="dropdown">
+                                <div class="dropdown-input">
+                                    <input aria-label="input" type="text" name="locationOrLanguage"
+                                        placeholder="Enter location or Language">
+                                </div>
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-list-item"><a href="#">Deutsch</a></li>
+                                    <li class="dropdown-list-item"><a href="#">English (EU)</a></li>
+                                    <li class="dropdown-list-item"><a class="target" href="#">English (US)</a></li>
+                                    <li class="dropdown-list-item"><a href="#">English (AU)</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Espanol (AL)</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Espanol (EU)</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Francias</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Italiano</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Polski</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Portugues</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Ruski</a></li>
+                                    <li class="dropdown-list-item"><a href="#">Kineski</a></li>
+                                </ul>
+                            </div>
+
+                        </a></li>
+                    <li class="navigation-right__list-item"><a
+                            href="https://careers.blizzard.com/global/en/jobcart">Saved jobs (0)</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <article class="hero">
+            <img src="../assets/bg.webp" />
+            <div class="hero__content">
+                <h1 class="hero__headline">Find your people</h1>
+                <p class="hero__text">Join Blizzard and entertain the universe.</p>
+
+                <form action="submit" method="GET" class="hero__form">
+                    <input aria-label="This is the label of the field" placeholder="Search job title or location"
+                        name="searchTerm" type="text" class="hero__input" />
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+        </article>
+
+        <section class="bg-blue">
+            <div class="container">
+                <h2 class="visually-hidden">We're on quest</h2>
+                <p class="lead">We’re on a quest: bring our dreams to life and craft the most epic entertainment
+                    experiences, ever. Hard
+                    work, iteration and polish go into the Blizzard “secret recipe,” but the most important ingredients
+                    come
+                    from talented people who share our vision. If that sounds like you, join us.</p>
+
+                <ul class="card-wrapper">
+                    <li>
+                        <article class="card card--alt">
+                            <a
+                                href="https://www.activision.com/cdn/activisionblizzard/d20210426-002_ABK_Veterans_Guide_04a-final.pdf"></a>
+                            <img class="card__image" alt="A veteran's guide to Activision Blizzard"
+                                src="https://cdn.phenompeople.com/CareerConnectResources/BLENGLOBAL/images/ABVeteransGuidearticle-1623281007447.png">
+                            <div class="card__content">
+                                <p class="card__category">PDF</p>
+                                <h3 class="card__title">A veteran's guide to Activision Blizzard</h3>
+                            </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card card--alt">
+                            <a
+                                href="https://www.activision.com/cdn/activisionblizzard/d20210426-002_ABK_Veterans_Guide_04a-final.pdf"></a>
+                            <img class="card__image" alt="Blizzard teams with girls who code"
+                                src="https://cdn.phenompeople.com/CareerConnectResources/BLENGLOBAL/images/homepage_girlswhocode-1589782343719.jpg">
+                            <div class="card__content">
+                                <p class="card__category">Article</p>
+                                <h3 class="card__title">Blizzard teams with girls who code</h3>
+                            </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card card--alt">
+                            <a
+                                href="https://www.activision.com/cdn/activisionblizzard/d20210426-002_ABK_Veterans_Guide_04a-final.pdf"></a>
+                            <img class="card__image" alt="Inside Blizzard: Take your child to work day - visual edition"
+                                src="https://cdn.phenompeople.com/CareerConnectResources/BLENGLOBAL/images/philanthropy_promo1-1589749719496.jpg">
+                            <div class="card__content">
+                                <p class="card__category">Article</p>
+                                <h3 class="card__title">Inside Blizzard: Take your child to work day - visual edition
+                                </h3>
+                            </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-role">
+            <div class="container">
+                <h2 class="role__main-title"><span class="highlighted">Heroes,</span> <br> CHOOSE YOUR ROLE</h2>
+
+                <div class="card-wrapper card-wrapper--roles">
+                    <article class="role">
+
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#iconmonstr-binoculars-7"></use>
+                            </svg>
+                            <h3 class="role__title">Analytics & Research</h3>
+                            <span class="role__summary">12 jobs</span>
+                        </a>
+                    </article>
+                    <article class="role">
+
+
+
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#iconmonstr-pen-16"></use>
+                            </svg>
+                            <h3 class="role__title">Art, Animation & Sound</h3>
+                            <span class="role__summary">83 jobs</span>
+                        </a>
+                    </article>
+                    <article class="role">
+
+
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#iconmonstr-building-17"></use>
+                            </svg>
+                            <h3 class="role__title">Corporate Operations</h3>
+                            <span class="role__summary">61 jobs</span>
+                        </a>
+                    </article>
+                    <article class="role">
+
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#iconmonstr-marketing-4"></use>
+                            </svg>
+                            <h3 class="role__title">Comunity, Marketing & Communications</h3>
+                            <span class="role__summary">36 jobs</span>
+                        </a>
+                    </article>
+                    <article class="role">
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#iconmonstr-pen-9"></use>
+                            </svg>
+                            <h3 class="role__title">Game design</h3>
+                            <span class="role__summary">44 jobs</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <article class="life">
+            <h2 class="life__title">Life at Blizzard</h2>
+            <p class="life__content">Our people are the heroes behind our heroes. Follow Life at Blizzard for a look
+                into their #blizzlife and what it's really like to work here.</p>
+            <div class="life__social-networks">
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </article>
+
+        <section class="learn">
+            <h2 class="learn__title">Learn about working at Blizzard:</h2>
+
+            <ul class="card-wrapper card-wrapper--alt">
+                <li>
+                    <article class="card">
+                        <a href="https://careers.blizzard.com/global/en/disciplines">
+                            <img class="card__image" alt="disciplines"
+                                src="https://cdn.phenompeople.com/CareerConnectResources/BLENGLOBAL/images/footer_promo1-1587703946753.jpg">
+                            <div class="card__content">
+                                <h3 class="card__title">Disciplines</h3>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <a href="https://careers.blizzard.com/global/en/disciplines">
+                            <img class="card__image" alt="disciplines"
+                                src="https://cdn.phenompeople.com/CareerConnectResources/BLENGLOBAL/images/footer_promo1-1587703946753.jpg">
+                            <div class="card__content">
+                                <h3 class="card__title">Locations</h3>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <a href="https://careers.blizzard.com/global/en/disciplines">
+                            <img class="card__image" alt="disciplines"
+                                src="https://cdn.phenompeople.com/CareerConnectResources/BLENGLOBAL/images/footer_promo1-1587703946753.jpg">
+                            <div class="card__content">
+                                <h3 class="card__title">Life at blizzard</h3>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <a href="https://careers.blizzard.com/global/en/disciplines">
+                            <img class="card__image" alt="disciplines"
+                                src="https://cdn.phenompeople.com/CareerConnectResources/BLENGLOBAL/images/footer_promo1-1587703946753.jpg">
+                            <div class="card__content">
+                                <h3 class="card__title">Student programs</h3>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="info-links">
+            <a href="#">Career Site Cookie Settings</a>
+            <a href="#">Personal Information</a>
+        </div>
+        <div class="info-blizzard">
+            <h2 class="info-blizzard__title">FOLLOW LIFE AT BLIZZARD</h2>
+            <p class="info-blizzard__content">Blizzard Entertainment is an Equal Opportunity Employer. All qualified
+                applicants will receive consideration for employment without regard to race, color, religion, sex,
+                sexual orientation, gender identity, gender expression, national origin, protected veteran status, or
+                any other basis protected by applicable law, and will not be discriminated against on the basis of
+                disability.</p>
+            <p class="info-blizzard__content">Accommodation Request: We are committed to working with and providing
+                reasonable assistance to individuals with physical and mental disabilities. If you are a disabled
+                individual requiring an accommodation to apply for an open position, please email your request to <a
+                    href="#">accommodationrequests@activisionblizzard.com</a>. General employment questions cannot be
+                accepted or processed here. Thank you for your interest.</p>
+            <p class="info-blizzard__content">Note to Recruiters and Placement Agencies: We do not accept unsolicited
+                agency resumes. Please do not forward unsolicited agency resumes to our website or to any of our
+                employees. We will not pay fees to any third party agency, outside recruiter or firm without a mutually
+                agreed-upon contract and will not be responsible for any agency fees associated with unsolicited
+                resumes. Unsolicited resumes received will be considered our property and will be processed accordingly.
+            </p>
+        </div>
+        <section class="battlenet">
+            <div class="battlenet-box">
+                <div class="lang-switcher">
+                    <button class="lang-picker">English (EU)</button>
+                    <ul class="lang-list">
+                        <li class="lang-list__item"><a href="#">Deutch</a></li>
+                        <li class="lang-list__item is-active"><a href="#">English (US)</a></li>
+                        <li class="lang-list__item"><a href="#">English (EU)</a></li>
+                        <li class="lang-list__item"><a href="#">Espanol</a></li>
+                        <li class="lang-list__item"><a href="#">Italiano</a></li>
+                        <li class="lang-list__item"><a href="#">Portuges</a></li>
+                        <li class="lang-list__item"><a href="#">Japanski</a></li>
+                        <li class="lang-list__item"><a href="#">Kineski</a></li>
+                        <li class="lang-list__item"><a href="#">Polski</a></li>
+                        <li class="lang-list__item"><a href="#">Francuski</a></li>
+
+                    </ul>
+                </div>
+                <h2 class="battlenet-title">BATTLE.NET</h2>
+                <nav class="battlenet-nav">
+                    <ul class="battlenet-nav-ul">
+                        <li class="battlenet-nav-li"><a href="#">CAREERS <span class="pipe">|</span></a></li>
+                        <li class="battlenet-nav-li"><a href="#">ABOUT <span class="pipe">|</span></a></li>
+                        <li class="battlenet-nav-li"><a href="#">SUPPORT <span class="pipe">|</span></a></li>
+                        <li class="battlenet-nav-li"><a href="#">CONTACT US <span class="pipe">|</span></a></li>
+                        <li class="battlenet-nav-li"><a href="#">PRESS <span class="pipe">|</span></a></li>
+                        <li class="battlenet-nav-li"><a href="#">API</a></li>
+                    </ul>
+                </nav>
+                <p class="battlenet-last-paragraf">©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED. <br>
+                    All <a class="battlenet-last-link" href="#">trademarks</a> referenced herein are the properties of
+                    their respective owners.</p>
+                <nav class="battlenet-nav-2">
+                    <ul class="battlenet-nav-2-ul">
+                        <li class="battlenet-nav-2-li"><a href="#">PRIVACY <span class="pipe">|</span></a></li>
+                        <li class="battlenet-nav-2-li"><a href="#">TERMS <span class="pipe">|</span></a></li>
+                        <li class="battlenet-nav-2-li"><a href="#">COOKIES</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer>
+
+    <svg width="0" height="0" class="visually-hidden">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-binoculars-7">
+            <path
+                d="M20.465 14.646c1.398 1.516-.156 3.949-2.146 3.227 1.462-.311 2.47-1.49 2.146-3.227zm-16.148 3.227c1.99.722 3.545-1.71 2.146-3.227.325 1.737-.683 2.916-2.146 3.227zm12.554-13.561c-.282-.764-1.01-1.312-1.871-1.312-1.298 0-2.313 1.244-1.904 2.582 1.111-.395 2.346-1.103 3.775-1.27zm7.129 11.688c0 2.761-2.238 5-5 5-4.039 0-4.156-4.123-7-4.123s-2.961 4.123-7 4.123c-2.762 0-5-2.239-5-5 0-2.135 1.535-4.567 3.941-8.821 1.908-3.372 4.754-1.26 6.815-.585.781.256 1.654.272 2.486 0 2.062-.674 4.908-2.787 6.815.585 2.408 4.254 3.943 6.686 3.943 8.821zm-16 0c0-1.654-1.346-3-3-3s-3 1.346-3 3 1.346 3 3 3 3-1.346 3-3zm5-2c0-.552-.447-1-1-1s-1 .448-1 1 .447 1 1 1 1-.448 1-1zm9 2c0-1.654-1.346-3-3-3s-3 1.346-3 3 1.346 3 3 3 3-1.346 3-3zm-13-13c-.861 0-1.589.548-1.871 1.312 1.429.168 2.664.875 3.775 1.27.409-1.338-.606-2.582-1.904-2.582z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"
+            id="iconmonstr-building-17">
+            <path
+                d="M24 24h-22v-24h14v8h8v16zm-16-5h-3v4h3v-4zm5 0h-3v4h3v-4zm8 0h-3v4h3v-4zm-15-5h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm9 0h-2v2h2v-2zm3 0h-2v2h2v-2zm-16-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm9 0h-2v2h2v-2zm3 0h-2v2h2v-2zm-16-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-pen-9">
+            <path
+                d="M1.185 21.986l.845.872-1 .971c-.118.114-.271.171-.423.171-.336 0-.607-.274-.607-.607 0-.159.062-.317.185-.436l1-.971zm-.185-18.613l20.654 18.734 1.346-1.48-20.658-18.734-1.342 1.48zm7.31 8.655l-3.105 3.009c-1.837 1.781-2.774 3.507-3.64 5.916l1.509 1.559c2.434-.79 4.187-1.673 6.024-3.455l3.364-3.262-4.152-3.767zm8.039.542l6.682-6.479c.645-.625.969-1.457.969-2.29 0-2.784-3.373-4.261-5.405-2.29l-6.979 6.768 4.733 4.291zm-5.596-5.074l7.274-7.055c-.284-.295-.658-.441-1.035-.441-.37 0-.743.142-1.033.424l-6.256 6.107 1.05.965z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"
+            id="iconmonstr-marketing-4">
+            <path
+                d="M13.927 23.84c-.638.105-1.292.16-1.959.16-6.606 0-11.968-5.377-11.968-12s5.362-12 11.968-12c6.605 0 11.967 5.377 11.967 12 0 .671-.055 1.329-.161 1.971l-1.917-.675c.055-.424.084-.857.084-1.296 0-5.519-4.469-10-9.973-10-5.505 0-9.973 4.481-9.973 10s4.468 10 9.973 10c.45 0 .894-.03 1.328-.088l.631 1.928zm-1.173-10.001c-.242.103-.507.161-.786.161-1.101 0-1.995-.896-1.995-2s.894-2 1.995-2c1.1 0 1.994.896 1.994 2 0 .211-.032.414-.093.604l9.733 3.426-3.662 1.926 4.06 4.173-1.874 1.827-4.089-4.215-2.167 3.621-3.116-9.523zm-.093 6.131c-.229.02-.46.03-.693.03-4.404 0-7.979-3.585-7.979-8s3.575-8 7.979-8c4.403 0 7.978 3.585 7.978 8 0 .207-.008.412-.023.615l-.979-.344.005-.271c0-3.863-3.128-7-6.981-7-3.853 0-6.982 3.137-6.982 7s3.129 7 6.982 7l.372-.01.321.98zm-.975-2.978c-2.621-.146-4.705-2.327-4.705-4.992 0-2.76 2.234-5 4.987-5 2.605 0 4.747 2.008 4.967 4.564l-1.06-.373c-.374-1.821-1.982-3.191-3.907-3.191-2.202 0-3.99 1.792-3.99 4 0 1.996 1.461 3.652 3.368 3.952l.34 1.04z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconmonstr-pen-16">
+            <path
+                d="M12.408 13.032c1.158-.062 2.854-.388 4.18-1.128.962-1.478 1.598-2.684 2.224-4-.86.064-1.852-.009-2.736-.257 1.068-.183 2.408-.565 3.422-1.216 1.255-1.784 2.185-4.659 2.502-6.429-2.874-.048-5.566.89-7.386 2.064-.614.7-1.146 2.389-1.272 3.283-.277-.646-.479-1.68-.242-2.542-1.458.767-2.733 1.643-4.177 2.86-.72 1.528-.834 3.29-.768 4.276-.391-.553-.915-1.63-.842-2.809-2.59 2.504-4.377 5.784-2.682 9.324 1.879-1.941 4.039-3.783 5.354-4.639-3.036 3.474-5.866 8.047-7.985 12.181l2.504-.786c1.084-1.979 2.059-3.684 2.933-4.905 3.229.423 6.096-2.168 8.028-4.795-.77.19-2.246-.058-3.057-.482z">
+            </path>
+        </symbol>
+    </svg>
+</body>
+
+</html>

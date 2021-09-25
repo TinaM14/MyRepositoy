@@ -1,0 +1,62 @@
+.cards {
+    padding-top: 60px;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    &-big, &-small {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+        padding-bottom: 35px;
+
+        &:hover {
+            overflow: hidden;
+        }
+
+        a {
+            position: relative;
+        }
+
+        &__title {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            color: $white-color;
+        }
+
+        &__image {
+            width: 365px;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-wrapper{
+            margin: 10px;
+
+            &:hover {
+                background-color: black;
+                overflow: hidden;
+            }
+        }
+
+        img{
+            display: block;
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+                opacity: .5;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+}

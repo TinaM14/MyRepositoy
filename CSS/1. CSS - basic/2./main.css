@@ -1,0 +1,50 @@
+body {
+    background-color: lightcyan;
+}
+
+p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#main {
+    width: 500px;
+    margin: auto;
+}
+
+.lista {
+    background-color: lightgreen;
+}
+
+.lista.druga {
+    background-color: lightseagreen;
+}
+
+.prva{
+    color: blue;
+    list-style-type: disc;
+}
+
+.list-item{
+    letter-spacing: 3px;
+}
+
+.treca > .list-item {
+    font-weight: bold;
+}
+
+p + a {
+    color: red;
+}
+
+p span {
+    color: tomato;
+}
+
+p > span {
+    color:violet;
+}
+
+a[href="#"] {
+    font-weight: bold;
+}

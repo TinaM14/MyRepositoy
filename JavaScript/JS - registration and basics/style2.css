@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+}
+.change-style {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+.add-class{
+    position: absolute;
+    left: 20%;
+    top: 40%
+}
+
+.box {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.border {
+    border: 4px solid green;
+}

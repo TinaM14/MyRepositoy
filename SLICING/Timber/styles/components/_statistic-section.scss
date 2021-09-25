@@ -1,0 +1,50 @@
+.statistic-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @include mq-down ('phone') {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .statistic {
+        text-align: center;
+
+        &__number {
+            display: inline-block;
+            padding-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        &__title {
+            padding-bottom: 20px;
+            color: $title-gray-color;
+        }
+
+        &__content {
+            color: $content-gray-color;
+        }
+    }
+}
+
+.promotion {
+    padding-top: 50px;
+    text-align: center;
+
+    &__title {
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__content {
+        padding-bottom: 50px;
+        color: $title-gray-color;
+    }
+
+    &__image {
+        width: 500px;
+        border-radius: 5%;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="action-page" method="GET">
+        <fieldset>
+            <legend>Form</legend>
+            <div>
+                <label for="name">First name:</label>
+                <input type="text" id="name" name="firstName" placeholder="Enter first name">
+            </div>
+            <div>
+                <label for="surname">Last name:</label>
+                <input type="text" id="surname" name="lastName" placeholder="Enter last name">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="Email" multiple placeholder="Enter e-mail">
+            </div>
+            <div>
+                Favourite dinosaur:
+                <br>
+                <label for="radio">T-Rex</label>
+                <input type="radio" id="radio" name="dinosaur" value="T-Rex">
+
+                <label for="radio2">Valaceraptor</label>
+                <input type="radio" id="radio2" name="dinosaur" value="Valaceraptor">
+            </div>
+            <div>
+                <label for="image">Image of dinosaur:</label>
+                <input type="file" id="image" name="imageOfDinosaur" accept="image/*">
+            </div>
+            <div>
+                Favourite frontend technologies:
+                <br>
+                
+                <label for="checkbox">HTML</label>
+                <input type="checkbox" id="checkbox" name="frontendTechology" value="HTML">
+
+                <label for="checkbox2">CSS</label>
+                <input type="checkbox" id="checkbox2" name="frontendTechology" value="CSS">
+
+                <label for="checkbox3">JavaScript</label>
+                <input type="checkbox" id="checkbox3" name="frontendTechology" value="JavaScript">
+            </div>
+            <div>
+                <label for="color">Favourite color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div>
+                <label for="range">Years of experience with frontend:</label>
+                <input type="range" id="range" name="rangeOfYears" min="0" max="15" step="0.5">
+            </div>
+            <div>
+                <label for="month">Month when you started with frontend:</label>
+                <input type="month" id="month" name="month">
+            </div>
+            <div>
+                <label for="autocomplete">Favourite food:</label>
+                <input type="text" id="autocomplete" name="favouriteFood" list="food">
+                <datalist id="food">
+                    <option>Apple</option>
+                    <option>Orange</option>
+                    <option>Banana</option>
+                </datalist>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

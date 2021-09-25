@@ -1,0 +1,46 @@
+.play {
+    background-image: url('/assets/apex-section-bg-emergence-season-play-for-free-dark-purple-xl.jpg.adapt.1920w.jpg');
+    // background-image: url('/img/#${url}');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    min-height: 350px;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    &__title {
+        padding: 50px 0;
+    }
+    &__summary {
+        padding-bottom: 50px;
+    }
+    // &__button {
+    //     @extend %btn-styles;
+    //     top: 15px;
+     
+    // }
+    &__star {
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 1.6rem;
+        margin-top: 60px;
+    }
+
+    &_link {
+        background: none;
+        border: 1px solid $primary-text-color;
+        border-radius: 1px;
+        padding: .5rem;
+
+        a {
+            text-decoration: none;
+            color: $primary-text-color;
+            text-transform: uppercase;
+            display: block;
+        }
+    }
+}

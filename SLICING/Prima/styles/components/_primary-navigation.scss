@@ -1,0 +1,66 @@
+.navigation-primary {
+    display: flex;
+
+    &-wrapper {
+        padding: 20px;
+
+        &:not(:last-child) {
+            border-right: 1px solid $light-gray-color;
+    }
+        }
+        
+
+    .button-wrapper {
+        cursor: pointer;
+
+        &:hover {
+            background: lighten($light-gray-color, 20);
+        }
+    }
+    
+    .first-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 250px;
+    }
+
+    &__logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &-list {
+        display: flex;
+        gap: 60px;
+        padding-top: 10px;
+
+        a {
+            display: flex;
+            gap: 10px;
+            text-decoration: none;
+            color: $black-color;
+            font-size: .9rem;
+            font-weight: bold;
+
+            .icon {
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
+
+    &-button {
+        display: block;
+        padding-top: 5px;
+        padding-left: 13px;
+        padding-right: 15px;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        .icon {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    }
+}

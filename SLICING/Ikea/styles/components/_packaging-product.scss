@@ -1,0 +1,42 @@
+.packaging-product {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: .9rem;
+        padding-bottom: .5rem;
+    }
+
+    &__description {
+        font-size: .9rem;
+        color: map-get($gray-color, 'main-gray');
+        padding-bottom: 1rem;
+    }
+
+    &__list {
+        padding-top: 1.5rem;
+        color: map-get($gray-color, 'main-gray');
+        font-size: .9rem;
+
+        &-item {
+            padding-bottom: .5rem;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__button {
+        &:focus-within {
+            text-decoration: underline;
+
+            .icon {
+                transform: rotate(270deg);
+                transition: all 300ms ease-in-out;
+            }
+        }
+    }
+}

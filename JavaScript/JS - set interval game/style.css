@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    max-width: 1300px;
+    height: 900px;
+    background-color: rgb(255, 192, 241);
+    margin: auto;
+}
+
+.circle {
+    display: inline;
+    position: absolute;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(153, 47, 130);
+    border-radius: 100%;
+    background-color: rgb(153, 47, 130);
+}
+
+.button {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid rgb(153, 47, 130);
+    border-radius: 2px;
+    background-color: rgb(153, 47, 130);
+    margin: auto;
+    color: white;
+}

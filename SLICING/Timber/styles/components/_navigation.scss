@@ -1,0 +1,28 @@
+.navigation-list {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+
+    &__item {
+        position: relative;
+        padding-left: 20px;
+
+        a {
+            text-decoration: none;
+            color: $white-color;
+
+            &:hover {
+                color: $blue-color;
+            }
+        }
+    }
+
+    &__item + &__item::before {
+        content: '';
+        background: $white-color;
+        width: 2px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+    }
+}

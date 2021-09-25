@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*:after {
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+.container {
+    max-width: 1212px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+body {
+    background-image: url('/assets/wooden-background.jpeg');
+    background-repeat: repeat;
+    background-position-x: center;
+    background-size: cover;
+}

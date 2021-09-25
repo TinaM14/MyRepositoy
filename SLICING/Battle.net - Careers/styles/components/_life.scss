@@ -1,0 +1,36 @@
+.life {
+    @include section-styles($url: 'bg-3.webp', $border:true);
+    padding: 65px 281px;
+
+    @include mq-down('phone') {
+        padding: 3rem 1rem;
+    }
+
+    &__title {
+        font-size: 4rem;
+        text-transform: initial;
+        font-weight: initial;
+        margin-bottom: 0.2em;
+
+        @include mq-down('phone') {
+            font-size: 2.5rem;
+        }        
+    }
+
+    &__content {
+        color: transparentize($color-text, .3);
+        line-height: 2;
+    }
+
+    &__social-networks {
+        color: transparentize($color-text, .3);
+        margin-top: .5rem;
+        display: flex;
+        gap: 10px;
+
+        a:hover {
+            color: dodgerblue;
+            text-decoration: underline;
+        }
+    }
+}

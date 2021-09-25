@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td {
+    border-bottom: 2px solid lightgray;
+}
+thead {
+    background-color: royalblue;
+    color: white;
+    border-bottom: 3px solid white;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightskyblue;
+}
+tbody tr:hover {
+    background-color: royalblue;
+    color: white;
+}
+thead th:first-child {
+    text-align: left;
+}
+thead th:last-child {
+    text-align: right;
+}
+tbody td:last-child {
+    text-align: right;
+}
+tbody td:nth-child(2) {
+    text-align: center;
+}
+body {
+    max-width: 600px;
+    margin:auto;
+}

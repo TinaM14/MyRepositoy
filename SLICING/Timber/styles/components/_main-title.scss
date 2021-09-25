@@ -1,0 +1,11 @@
+.main-title-wrapper {
+    padding-top: 100px;
+
+    .main-title {
+        display: inline-block;
+        font-size: 5rem;
+        font-weight: bold;
+        color: $white-color;
+        border-bottom: 2px solid $blue-color;
+    }
+}

@@ -1,0 +1,39 @@
+// media query up
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+// media query down - MOBITEL
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin button {
+    padding: 10px 30px;
+    border: 1px solid $black-color;
+    border-radius: 30px;
+    background: $black-color;
+    color: $white-color;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @content;
+}
+
+@mixin input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid $black-color;
+    outline: none;
+
+    @content;
+}

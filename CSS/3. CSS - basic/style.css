@@ -1,0 +1,17 @@
+.wide {
+    background-color: lightskyblue;
+    display: block;
+    padding: 5px;
+}
+div div {
+    color: green;
+    display: inline;
+}
+.hide-me {
+    display:none;
+}
+.link {
+    display: inline-block;
+    border: 3px solid red;
+    line-height: 0;
+}

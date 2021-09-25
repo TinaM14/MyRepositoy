@@ -1,0 +1,30 @@
+.hero {
+    background-image: url('/assets/apex-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+
+    &-container {
+        padding-top: 200px;
+        padding-left: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 45%;
+        gap: 15px;
+        color: $primary-text-color;
+        
+    }
+
+    &-logo {
+        width: 200px;
+        height: auto;
+    }
+
+    &-content {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+}

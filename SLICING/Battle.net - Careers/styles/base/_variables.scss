@@ -1,0 +1,34 @@
+$color-text: #ffff;
+$color-bg: #092650;
+$color-border: #D8D8D8;
+$color-primary: #006fb2;
+$color-secondary: #ff9000;
+
+// BUTTONS
+$btn-color-bg: $color-primary;
+$btn-color-text: $color-text;
+$btn-color-border:  #79d4ff;
+
+// GRID variables
+$grid-breakpoint-s-max: 688px;
+$grid-breakpoint-m-min: 689px;
+$grid-breakpoint-m-max: 992px;
+$grid-breakpoint-l-min: 993px;
+
+$grid: (
+    'phone':(
+        'max': $grid-breakpoint-s-max
+    ),
+    'tablet':(
+        'min': $grid-breakpoint-m-min,
+        'max': $grid-breakpoint-m-max
+    ),
+    'desktop':(
+        'min': $grid-breakpoint-l-min
+    )
+);
+
+.container {
+    margin: auto;
+    max-width: 1225px;
+}

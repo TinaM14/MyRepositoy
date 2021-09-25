@@ -1,0 +1,20 @@
+.hero-button {
+    display: flex;
+    gap: 10px;
+
+    button {
+        border: 1px solid $primary-text-color;
+        background: none;
+        padding: 0.5em 1em;
+        border-radius: 2px;
+        color: $primary-text-color;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: $primary-text-color;
+            display: block;
+
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 50px 0;
+
+    @include mq-down('phone') {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    @include big-icon;
+
+    &__title {
+        padding: 20px 0;
+        font-size: 1.5rem;
+        color: $white-color;
+    }
+
+    &__content {
+        line-height: 1.5;
+        color: $white-color;
+    }
+}

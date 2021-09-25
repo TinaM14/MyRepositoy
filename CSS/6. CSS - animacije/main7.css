@@ -1,0 +1,62 @@
+.container {
+    background-color: #c62828;
+    animation: grow 3s forwards, thirdAnimation 2s forwards 4s;
+  }
+  
+  .heading {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    opacity: 0;
+    animation: secondAnimation 1s forwards 3s;
+  }
+
+  @keyframes grow {
+      0% {
+          width: 0;
+          height: 0;
+      }
+
+      25% {
+          height: 1rem;
+      }
+
+      50% {
+          width: 100%;
+          height: 1rem;
+      }
+
+      100% {
+          width: 100%;
+          height: 10rem;
+      }
+  }
+
+  @keyframes secondAnimation {
+      from {
+          transform: translateY(-100%);
+          opacity: 0;
+      }
+
+      to {
+        transform: translateY(3rem);
+          opacity: 1;
+      }
+  }
+
+  @keyframes thirdAnimation {
+      0% {
+          width: 100%;
+          height: 10rem;
+      }
+      75% {
+          width: 100%;
+          height: 20rem;
+      }
+      100% {
+          background-color: #8e0000;
+          width: 100%;
+          height: 20rem;
+      }
+  }

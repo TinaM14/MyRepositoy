@@ -1,0 +1,85 @@
+.footer {
+    padding-top: 50px;
+
+    &-first-section {
+        background: lighten($light-gray-color, 20);
+
+        &-wrapper {
+            max-width: 1300px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        &__content {
+            font-size: 1.1rem;
+            margin-top: 8px;
+        }
+
+        &__input {
+            display: flex;
+            gap: 10px;
+            width: 45%;
+
+            .footer-input {
+                @include input {
+                    width: 70%;
+                }
+            }
+
+            .footer-button {
+                @include button {
+                    margin-bottom: 15px;
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+
+    &-second-section {
+        background: $black-color;
+
+        &__statements {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            padding: 30px 40px;
+            text-transform: uppercase;
+            color: $white-color;
+            font-size: .9rem;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                cursor: help;
+
+                .icon {
+                    align-self: center;
+                    width: 1.5em;
+                    height: 1.5em;
+                    fill: $white-color;
+                }
+            }
+            
+        }
+
+        &__facts {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            color: $white-color;
+            text-transform: uppercase;
+            font-size: .8rem;
+
+            .icon {
+                width: .7em;
+                height: .7em;
+                fill: $white-color;
+            }
+        }
+    }
+}
